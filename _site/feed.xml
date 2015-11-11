@@ -5,9 +5,20 @@
     <description>My conversations with neural networks and design patterns.</description>
     <link>http://phoenixx.me/</link>
     <atom:link href="http://phoenixx.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 11 Nov 2015 12:56:59 +0530</pubDate>
-    <lastBuildDate>Wed, 11 Nov 2015 12:56:59 +0530</lastBuildDate>
+    <pubDate>Wed, 11 Nov 2015 13:00:25 +0530</pubDate>
+    <lastBuildDate>Wed, 11 Nov 2015 13:00:25 +0530</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>Blogging Like a Hacker</title>
+        <description>&lt;h1 id=&quot;this-a-simple-test-blogpost&quot;&gt;This a simple test blogpost.&lt;/h1&gt;
+</description>
+        <pubDate>Wed, 11 Nov 2015 00:00:00 +0530</pubDate>
+        <link>http://phoenixx.me/2015/11/11/test.html</link>
+        <guid isPermaLink="true">http://phoenixx.me/2015/11/11/test.html</guid>
+        
+        
+      </item>
     
   </channel>
 </rss>
