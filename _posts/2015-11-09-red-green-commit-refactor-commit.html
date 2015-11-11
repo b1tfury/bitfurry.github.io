@@ -1,0 +1,30 @@
+---
+layout: post
+title: Red - Green - Commit - Refactor - Commit
+date: 2015-11-09 14:58:04.000000000 +05:30
+type: post
+published: true
+status: publish
+categories: []
+tags: []
+meta:
+  _rest_api_published: '1'
+  _rest_api_client_id: "-1"
+  _publicize_job_id: '16686451438'
+author:
+  login: bitfurry
+  email: sahilkharb@iitj.ac.in
+  display_name: furry
+  first_name: ''
+  last_name: ''
+---
+<p>If you have ever done any test driven development(TDD), then you must be familiar with the title, to others this signifies an infinite development cycle which consists of following steps :</p>
+<ol>
+<li>Red : Write a very small test code for the problem. How small?  , well it all depends on the context, but try to keep minimum. After writing this test code the build of project should fail. Also one thing worth observing is that this test code should be as independent as possible to the previous tests.</li>
+<li>Green: Now write code just to pass that test. The implementation should be as minimal as possible, or as dumb as possible.</li>
+<li>Commit : Commit the changes made to the project. The commit should not contain any code with which build is failing.</li>
+<li>Refactor: After having enough baby steps to understand problem's behaviour, if generalisation of problem is possible then this step comes in play and all the baby steps are replaced by that general formula. Note that tests should note be changed at all.</li>
+<li>Commit : Again commit the final changes.</li>
+</ol>
+<p>The philosophy behind this kind of development is that even complex problems can be solved easily if you approach them in the dumbest way.</p>
+<p>Finally, the commits should be considered as important as code , since they help is maintaining discipline throughout the project. A series of good commits should look like story telling , thus decreases code maintenance time. And the most crucial yet ignored part of good commits is that they help you in bisecting and cherry-picking features from the project. Thus fine grain commits must be part of any project.</p>

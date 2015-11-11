@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Sahil Kharb</title>
-  <meta name="description" content="My conversations with neural networks and design patterns.">
+  <title>Red - Green - Commit - Refactor - Commit</title>
+  <meta name="description" content="If you have ever done any test driven development(TDD), then you must be familiar with the title, to others this signifies an infinite development cycle whic...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://phoenixx.me/">
+  <link rel="canonical" href="http://phoenixx.me/2015/11/09/red-green-commit-refactor-commit.html">
   <link rel="alternate" type="application/rss+xml" title="Sahil Kharb" href="http://phoenixx.me/feed.xml">
 </head>
 
@@ -54,55 +54,28 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Red - Green - Commit - Refactor - Commit</h1>
+    <p class="post-meta"><time datetime="2015-11-09T14:58:04+05:30" itemprop="datePublished">Nov 9, 2015</time> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{"login"=>"bitfurry", "email"=>"sahilkharb@iitj.ac.in", "display_name"=>"furry", "first_name"=>"", "last_name"=>""}</span></span></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Nov 11, 2015</span>
+  <div class="post-content" itemprop="articleBody">
+    <p>If you have ever done any test driven development(TDD), then you must be familiar with the title, to others this signifies an infinite development cycle which consists of following steps :</p>
+<ol>
+<li>Red : Write a very small test code for the problem. How small?  , well it all depends on the context, but try to keep minimum. After writing this test code the build of project should fail. Also one thing worth observing is that this test code should be as independent as possible to the previous tests.</li>
+<li>Green: Now write code just to pass that test. The implementation should be as minimal as possible, or as dumb as possible.</li>
+<li>Commit : Commit the changes made to the project. The commit should not contain any code with which build is failing.</li>
+<li>Refactor: After having enough baby steps to understand problem's behaviour, if generalisation of problem is possible then this step comes in play and all the baby steps are replaced by that general formula. Note that tests should note be changed at all.</li>
+<li>Commit : Again commit the final changes.</li>
+</ol>
+<p>The philosophy behind this kind of development is that even complex problems can be solved easily if you approach them in the dumbest way.</p>
+<p>Finally, the commits should be considered as important as code , since they help is maintaining discipline throughout the project. A series of good commits should look like story telling , thus decreases code maintenance time. And the most crucial yet ignored part of good commits is that they help you in bisecting and cherry-picking features from the project. Thus fine grain commits must be part of any project.</p>
 
-        <h2>
-          <a class="post-link" href="/2015/11/11/test.html">Blogging Like a Hacker</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 10, 2015</span>
+  </div>
 
-        <h2>
-          <a class="post-link" href="/2015/11/10/dont-repeat-yourself.html">Don't repeat yourself</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Nov 9, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/2015/11/09/red-green-commit-refactor-commit.html">Red - Green - Commit - Refactor - Commit</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 28, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/2015/10/28/understanding-layered-architecture-scrupulously.html">Understanding Layered architecture scrupulously</a>
-        </h2>
-      </li>
-    
-      <li>
-        <span class="post-meta">Oct 23, 2015</span>
-
-        <h2>
-          <a class="post-link" href="/2015/10/23/architecture-patterns-which-and-why.html">Architecture Patterns : Which and why ?</a>
-        </h2>
-      </li>
-    
-  </ul>
-
-</div>
+</article>
 
       </div>
     </div>

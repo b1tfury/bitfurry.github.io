@@ -5,8 +5,8 @@
     <description>My conversations with neural networks and design patterns.</description>
     <link>http://phoenixx.me/</link>
     <atom:link href="http://phoenixx.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 11 Nov 2015 13:00:25 +0530</pubDate>
-    <lastBuildDate>Wed, 11 Nov 2015 13:00:25 +0530</lastBuildDate>
+    <pubDate>Wed, 11 Nov 2015 13:14:47 +0530</pubDate>
+    <lastBuildDate>Wed, 11 Nov 2015 13:14:47 +0530</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -16,6 +16,176 @@
         <pubDate>Wed, 11 Nov 2015 00:00:00 +0530</pubDate>
         <link>http://phoenixx.me/2015/11/11/test.html</link>
         <guid isPermaLink="true">http://phoenixx.me/2015/11/11/test.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Don&#39;t repeat yourself</title>
+        <description>&lt;blockquote&gt;&quot;Every piece of knowledge must have a single, unambiguous , authoritative representation within a system.&quot;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;We all are aware the above stated famous DRY principle, yet we keep on making mistakes, keep on repeating ourselves. In this blog I will be writing about the why duplication happens and what can be done to avoid it. Most of the time you will find that duplication happens due to following reasons :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Developers feels that there is no choice and they are forced to do duplication in other words duplication is &lt;strong&gt;Imposed&lt;/strong&gt; on them.&lt;/li&gt;
+&lt;li&gt;Duplication sometimes comes as a result of bad design and developer might not be aware about it i.e. &lt;strong&gt;Inadvertent Duplication&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Imposed Duplication&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In every developer&#39;s life there comes a situation when you think that there is no way around but you have to duplicate for your requirements. But by sticking to some of the following techniques one can avoid it.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Avoid comments&lt;/strong&gt;, this may sound opposite to what you have been doing so long, but this is a fact that we are taught that code should have a lots of comments, but unfortunately nobody has told us why code needs comments , only a bad code requires them. Comments become out of date sooner than code, and untrustworthy comments are worse than no comments.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Always write documentation and then write code.&lt;/strong&gt; If something changes append documentation first then change the code. Both always contain representation of same knowledge. And documentation can be used for writing tests or something else thus can be used to save a lot of time.&lt;/li&gt;
+&lt;li&gt;Under pressure we tends to take shortcut, avoid standard protocols and become &lt;strong&gt;Impatient&lt;/strong&gt; which will eventually lead to duplication.&lt;/li&gt;
+&lt;li&gt;When multiple people work on a project then entire set of functionality inadvertently duplicated and such duplication can go undetected for very long period of time, which makes them hardest of all, this is called &lt;strong&gt;Interdeveloper Duplication&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Inadvertent Duplication&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This type of duplication usually happens due to bad design at first place. Scenarios like a multiple classes having same attributes i.e &lt;strong&gt;unnormalised data &lt;/strong&gt;is created and when there is any update requirement for such attributes then one has to make sure that update happens in all classes. This kind of situations can be simply avoided by creating a good design which will eventually never create any unnormalised data.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Impatient Duplication&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In almost every project , there comes a situation when due to time pressures ,most of us tend to take shortcuts , like just copy from somewhere and modify according to requirements, or just hardcode values etc. All these things attracts even best of us, only advice for such situations is a discipline and willingness to spend time up front to save pain later. When you are tempted to make such mistake always remember &quot;&lt;strong&gt;Shortcuts make for longer delays&quot;&lt;/strong&gt;. This type of duplication is very easy to detect and handle.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Interdeveloper Duplication&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Since this is the hardest of all type of duplications to detect, which makes us think that it will require utmost care to avoid or to detect. But for this also there is a simple practice by following it we can easily avoid it and even it persist then will be detected at an early stage. &lt;strong&gt;Active communication among developers &lt;/strong&gt;that&#39;s the only thing which can stop it, and this can be achieved by setting up discussion forms, newsgroups to exchange ideas and code reviews. All we should try to foster an environment where it&#39;s easy to find and reuse existing implementations rather building again from scratch.&lt;/p&gt;
+&lt;p&gt;I hope you learned what I tried to teach and try to adapt at least some of them in your daily routine. That&#39;s all, &lt;strong&gt;happy hacking!&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 10 Nov 2015 15:15:16 +0530</pubDate>
+        <link>http://phoenixx.me/2015/11/10/dont-repeat-yourself.html</link>
+        <guid isPermaLink="true">http://phoenixx.me/2015/11/10/dont-repeat-yourself.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Red - Green - Commit - Refactor - Commit</title>
+        <description>&lt;p&gt;If you have ever done any test driven development(TDD), then you must be familiar with the title, to others this signifies an infinite development cycle which consists of following steps :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Red : Write a very small test code for the problem. How small?  , well it all depends on the context, but try to keep minimum. After writing this test code the build of project should fail. Also one thing worth observing is that this test code should be as independent as possible to the previous tests.&lt;/li&gt;
+&lt;li&gt;Green: Now write code just to pass that test. The implementation should be as minimal as possible, or as dumb as possible.&lt;/li&gt;
+&lt;li&gt;Commit : Commit the changes made to the project. The commit should not contain any code with which build is failing.&lt;/li&gt;
+&lt;li&gt;Refactor: After having enough baby steps to understand problem&#39;s behaviour, if generalisation of problem is possible then this step comes in play and all the baby steps are replaced by that general formula. Note that tests should note be changed at all.&lt;/li&gt;
+&lt;li&gt;Commit : Again commit the final changes.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The philosophy behind this kind of development is that even complex problems can be solved easily if you approach them in the dumbest way.&lt;/p&gt;
+&lt;p&gt;Finally, the commits should be considered as important as code , since they help is maintaining discipline throughout the project. A series of good commits should look like story telling , thus decreases code maintenance time. And the most crucial yet ignored part of good commits is that they help you in bisecting and cherry-picking features from the project. Thus fine grain commits must be part of any project.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 09 Nov 2015 14:58:04 +0530</pubDate>
+        <link>http://phoenixx.me/2015/11/09/red-green-commit-refactor-commit.html</link>
+        <guid isPermaLink="true">http://phoenixx.me/2015/11/09/red-green-commit-refactor-commit.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Understanding Layered architecture scrupulously</title>
+        <description>&lt;p class=&quot;p1&quot;&gt;Layered architecture is also called as n-tier architecture pattern.&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;Most Java EE Applications use this pattern only , so most of the architects are aware of this type of pattern.&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;What exactly layered architecture is :-&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;Different application components are placed in horizontal layers , each layer has its own purpose and significance.(For example :- presentation logic or business logic)&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;There are no specific rule for how many type and number of layers , but most layered architecture applications have standard four layers :&lt;/p&gt;
+&lt;ul class=&quot;ul1&quot;&gt;
+&lt;li class=&quot;li1&quot;&gt;Presentation&lt;/li&gt;
+&lt;li class=&quot;li1&quot;&gt;Business&lt;/li&gt;
+&lt;li class=&quot;li1&quot;&gt;Persistence&lt;/li&gt;
+&lt;li class=&quot;li1&quot;&gt;Database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[caption id=&quot;attachment_14&quot; align=&quot;aligncenter&quot; width=&quot;300&quot;]&lt;a href=&quot;https://bitfurry.files.wordpress.com/2015/10/1.jpg&quot;&gt;&lt;img class=&quot;wp-image-14 size-medium&quot; title=&quot;layered architecture&quot; src=&quot;https://bitfurry.files.wordpress.com/2015/10/1.jpg?w=300&quot; alt=&quot;1&quot; width=&quot;300&quot; height=&quot;225&quot; /&gt;&lt;/a&gt; Layered architecture[/caption]&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;Sometimes when two layers have deeper connections they are merged into single one for example persistence layer embedded in to&lt;span class=&quot;Apple-converted-space&quot;&gt;  &lt;/span&gt;business layer.When application is complex numbers of layers may increase to five to six.&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;Each layer in the architecture forms an abstraction around its responsibilities needs to be done for the application. For example&lt;span class=&quot;Apple-converted-space&quot;&gt; &lt;/span&gt;: the&lt;span class=&quot;Apple-converted-space&quot;&gt;  &lt;/span&gt;presentation layer need not to worry about how to get customer data, its only needs is to display the data in a particular format.&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;Separation of concerns among the components is one of the powerful feature. Due to this it would be easy to build effective roles and responsibility models.&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;Due well-defined component interfaces and limited scoping of components it is easy to develop,test, govern and maintain applications using n-tier architecture plans.&lt;/p&gt;
+&lt;p class=&quot;p4&quot;&gt;&lt;b&gt;Key Concepts:-&lt;/b&gt;&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;Notice &lt;b&gt;CLOSED &lt;/b&gt;has been marked at the end of each architectural layer , this concept is called &lt;b&gt;layers of isolation.&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://bitfurry.files.wordpress.com/2015/10/2.jpg&quot;&gt;&lt;img class=&quot;wp-image-15 size-medium aligncenter&quot; src=&quot;https://bitfurry.files.wordpress.com/2015/10/2.jpg?w=300&quot; alt=&quot;2&quot; width=&quot;300&quot; height=&quot;205&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;In the above diagram we can see that if we want to go to database layer from presentation layer then it’s mandatory to pass through Business and Persistence layer which sounds a bit weird. But it has more benefits than drawback:&lt;/p&gt;
+&lt;ul class=&quot;ul1&quot;&gt;
+&lt;li class=&quot;li1&quot;&gt;All layers are independent so changes in one layer won&#39;t affect another&lt;/li&gt;
+&lt;li class=&quot;li1&quot;&gt;Less coupling&lt;/li&gt;
+&lt;li class=&quot;li1&quot;&gt;Easy maintenance i.e. in order to work on presentation layer one need not to know the in working of all other layers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class=&quot;p1&quot;&gt;But there are times depending on project need some layers needs to be open i.e. we can bypass them to move to next layer.&lt;span class=&quot;Apple-converted-space&quot;&gt;  &lt;/span&gt;In such scenarios instead of making one of&lt;span class=&quot;Apple-converted-space&quot;&gt;  &lt;/span&gt;these layers open it suggested to add a service layer which could be open.&lt;/p&gt;
+&lt;p&gt;[caption id=&quot;attachment_16&quot; align=&quot;aligncenter&quot; width=&quot;300&quot;]&lt;a href=&quot;https://bitfurry.files.wordpress.com/2015/10/3.jpg&quot;&gt;&lt;img class=&quot;wp-image-16 size-medium&quot; src=&quot;https://bitfurry.files.wordpress.com/2015/10/3.jpg?w=300&quot; alt=&quot;3&quot; width=&quot;300&quot; height=&quot;249&quot; /&gt;&lt;/a&gt; &lt;strong&gt; &lt;/strong&gt;[/caption]&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;So , if we want to have some common services which can be used from service layer but independent of presentation layer then placing an open service layer below business layer solves our problem.&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;Using this concept of open and closed layers one can define relationships between different layers and also provides designers and developers the necessary information about access restrictions within the architecture.&lt;/p&gt;
+&lt;p class=&quot;p4&quot;&gt;&lt;b&gt;Example &lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://bitfurry.files.wordpress.com/2015/10/4.jpg&quot;&gt;&lt;img class=&quot;wp-image-17 size-medium aligncenter&quot; src=&quot;https://bitfurry.files.wordpress.com/2015/10/4.jpg?w=300&quot; alt=&quot;4&quot; width=&quot;300&quot; height=&quot;290&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;The above diagram is an example of layered architecture which shows the flow in which a request from a business user to retrieve customer information for a particular individual.&lt;/p&gt;
+&lt;p class=&quot;p4&quot;&gt;&lt;b&gt;Considerations&lt;/b&gt;&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;Although this architecture pattern is solid and generally used for most of the applications in their starting phase when it is not sure that which architecture will suite the most.&lt;/p&gt;
+&lt;p class=&quot;p1&quot;&gt;But there are some things which one should keep in mind while choosing this pattern for their application.&lt;/p&gt;
+&lt;ol class=&quot;ol1&quot;&gt;
+&lt;li class=&quot;li1&quot;&gt;&lt;strong&gt;Architecture sinkhole anti-pattern&lt;/strong&gt; - Since all requests needs to traverse through all all layers in order to go form top to bottom , so this pattern may sometime become overhead to your requests. For this scenario one should follow &lt;strong&gt;80:20 rule&lt;/strong&gt; i.e if less than 20 percent of requests are just passing through all layers without any logic implemented on them then this pattern is suitable but , if this ratio is reverse which means that most of the request are travelling back and forth with any additional logic being implemented on them in between then my friend this pattern is a sinkhole for your application.&lt;/li&gt;
+&lt;li class=&quot;li1&quot;&gt;Also this pattern will lead to monolithic applications even if layers are independent and also deployed separately, which is not considered good for general robustness and reliability, &lt;span class=&quot;Apple-converted-space&quot;&gt; &lt;/span&gt;performance and scalability&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p class=&quot;p4&quot;&gt;&lt;b&gt;Analysis:&lt;/b&gt;&lt;/p&gt;
+&lt;table style=&quot;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:686px;&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width:103px;&quot; /&gt;
+&lt;col style=&quot;width:143px;&quot; /&gt;
+&lt;col style=&quot;width:100px;&quot; /&gt;
+&lt;col style=&quot;width:101px;&quot; /&gt;
+&lt;col style=&quot;width:84px;&quot; /&gt;
+&lt;col style=&quot;width:155px;&quot; /&gt;&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th style=&quot;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Overall agility&lt;/th&gt;
+&lt;th style=&quot;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Ease of deployment&lt;/th&gt;
+&lt;th style=&quot;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Testability&lt;/th&gt;
+&lt;th style=&quot;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Performance&lt;/th&gt;
+&lt;th style=&quot;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Scalability&lt;/th&gt;
+&lt;th style=&quot;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Ease of development&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Low&lt;/td&gt;
+&lt;td style=&quot;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Low&lt;/td&gt;
+&lt;td style=&quot;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;High&lt;/td&gt;
+&lt;td style=&quot;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Low&lt;/td&gt;
+&lt;td style=&quot;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Low&lt;/td&gt;
+&lt;td style=&quot;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;High&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p class=&quot;p2&quot;&gt;&lt;span class=&quot;Apple-converted-space&quot;&gt;     &lt;/span&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 28 Oct 2015 14:59:12 +0530</pubDate>
+        <link>http://phoenixx.me/2015/10/28/understanding-layered-architecture-scrupulously.html</link>
+        <guid isPermaLink="true">http://phoenixx.me/2015/10/28/understanding-layered-architecture-scrupulously.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Architecture Patterns : Which and why ?</title>
+        <description>&lt;blockquote&gt;
+&lt;p class=&quot;p1&quot;&gt;&lt;span class=&quot;s1&quot;&gt;Carefully designed structure of something is called architecture.  &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class=&quot;p1&quot;&gt;&lt;span class=&quot;s1&quot;&gt;In software industry this word is often used but rarely followed at first place.&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;Often all developers start coding their project without a clear picture of the architecture of their application and the reason for not having it is “this is just beginning , we will formalise it at a later stage.” . Eventually it leads to a standard n-tier architecture in which implicitly multiple layers are created to separate modules into packages.&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;This will make source code :-&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;ol1&quot;&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;unorganised&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;highly coupled (spaghetti code)&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;prone to break down&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;hard to maintain&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;This list is never ending. And it would become just another&lt;strong&gt; “big ball of mud”&lt;/strong&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;The bad architecture will lead to “&lt;a href=&quot;http://batman.wikia.com/wiki/The_Pit&quot; target=&quot;_blank&quot;&gt;The Pit&lt;/a&gt;”. For such poorly architected apps in order to understand the architectural characteristics one need to know the inner working of each component .&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt; The basic questions like &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;will it scale?&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;what are the performance characteristics ?&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;what are the deployment characteristics?&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;how much responsive is to the change?&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;All such questions will be very hard to answer if architecture of your app is not planned properly.&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;With a planned architecture one can define the basic working and behaviour of the application. And there are numerous architecture patterns which can be adopted depending on your requirements. For example, some architecture pattern will naturally lend themselves toward highly scalable apps while some other lend themselves to highly agile. Thus knowing strengths and weakness of each architecture pattern is necessary in order to choose for your business. I will be writing on following architecture patterns in coming days:-&lt;/span&gt;&lt;/p&gt;
+&lt;ol class=&quot;ol1&quot;&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;https://bitfurry.wordpress.com/2015/10/28/understanding-layered-architecture-scrupulously/&quot; target=&quot;_blank&quot;&gt;Layered architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Event-driven_architecture&quot; target=&quot;_blank&quot;&gt;Event-driven architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;http://viralpatel.net/blogs/microkernel-architecture-pattern-apply-software-systems/&quot; target=&quot;_blank&quot;&gt;Microkernel architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Space-based_architecture&quot; target=&quot;_blank&quot;&gt;Space-based architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;Stay tuned.&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;Credits :- Software architecture patterns by Mark Richards.&lt;/span&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Oct 2015 06:43:53 +0530</pubDate>
+        <link>http://phoenixx.me/2015/10/23/architecture-patterns-which-and-why.html</link>
+        <guid isPermaLink="true">http://phoenixx.me/2015/10/23/architecture-patterns-which-and-why.html</guid>
         
         
       </item>
