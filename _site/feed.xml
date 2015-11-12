@@ -5,9 +5,28 @@
     <description>My conversations with neural networks and design patterns.</description>
     <link>http://phoenixx.me/</link>
     <atom:link href="http://phoenixx.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 11 Nov 2015 13:20:06 +0530</pubDate>
-    <lastBuildDate>Wed, 11 Nov 2015 13:20:06 +0530</lastBuildDate>
+    <pubDate>Thu, 12 Nov 2015 21:37:19 +0530</pubDate>
+    <lastBuildDate>Thu, 12 Nov 2015 21:37:19 +0530</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>Prototyping versus Tracer Bullets</title>
+        <description>&lt;p&gt;Often developers have this misconception that tracer code concept is a one kind of prototyping in disguise. But they are quite different.&lt;/p&gt;
+
+&lt;p&gt;The sole purpose of each of these concepts differentiate them.&lt;/p&gt;
+
+&lt;p&gt;Prototyping is done with an aim to explore by focussing on specific feature or aspect of the project. In true spirit of prototyping, it should be thrown away after learning lessons from it. And recode entire thing from scratch applying all lessons learnt from the prototype.&lt;/p&gt;
+
+&lt;p&gt;Contrary to this, tracer code addresses a different problem. Tracer code is lean and can disguise as a prototype but it is always complete and not disposable. In this scenario we always have a skeleton of entire system over which developers will keep on hanging new code and features. Tracer code always has a tendency for evolution but prototype are created to serve one purpose and should not be modified to make them production ready.&lt;/p&gt;
+
+&lt;p&gt;Think of prototyping as the training process that takes place before a single tracer bullet is fired.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Nov 2015 00:00:00 +0530</pubDate>
+        <link>http://phoenixx.me/2015/11/11/prototyping-versus-tracer-bullets.html</link>
+        <guid isPermaLink="true">http://phoenixx.me/2015/11/11/prototyping-versus-tracer-bullets.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Don&#39;t repeat yourself</title>
