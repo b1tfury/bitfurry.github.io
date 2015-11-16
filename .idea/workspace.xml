@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b79ada9-9ecd-421a-9304-f5287fee8598" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2015-10-28-understanding-layered-architecture-scrupulously.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/2015-10-23-architecture-patterns-which-and-why.html" afterPath="$PROJECT_DIR$/_drafts/2015-10-23-architecture-patterns-which-and-why.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_drafts/2015-10-23-architecture-patterns-which-and-why.html" afterPath="" />
     </list>
     <ignored path="bitfurry.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,18 +22,7 @@
     <favorites_list name="bitfurry.github.io" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="2015-10-23-architecture-patterns-which-and-why.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_drafts/2015-10-23-architecture-patterns-which-and-why.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

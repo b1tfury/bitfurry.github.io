@@ -5,8 +5,8 @@
     <description>My conversations with neural networks and design patterns.</description>
     <link>http://phoenixx.me/</link>
     <atom:link href="http://phoenixx.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Nov 2015 13:31:22 +0530</pubDate>
-    <lastBuildDate>Mon, 16 Nov 2015 13:31:22 +0530</lastBuildDate>
+    <pubDate>Mon, 16 Nov 2015 13:33:38 +0530</pubDate>
+    <lastBuildDate>Mon, 16 Nov 2015 13:33:38 +0530</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -75,6 +75,47 @@
         <pubDate>Mon, 09 Nov 2015 14:58:04 +0530</pubDate>
         <link>http://phoenixx.me/2015/11/09/red-green-commit-refactor-commit.html</link>
         <guid isPermaLink="true">http://phoenixx.me/2015/11/09/red-green-commit-refactor-commit.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Architecture Patterns : Which and why ?</title>
+        <description>&lt;blockquote&gt;
+&lt;p class=&quot;p1&quot;&gt;&lt;span class=&quot;s1&quot;&gt;Carefully designed structure of something is called architecture.  &lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p class=&quot;p1&quot;&gt;&lt;span class=&quot;s1&quot;&gt;In software industry this word is often used but rarely followed at first place.&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;Often all developers start coding their project without a clear picture of the architecture of their application and the reason for not having it is “this is just beginning , we will formalise it at a later stage.” . Eventually it leads to a standard n-tier architecture in which implicitly multiple layers are created to separate modules into packages.&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;This will make source code :-&lt;/span&gt;&lt;/p&gt;
+&lt;ul class=&quot;ol1&quot;&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;unorganised&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;highly coupled (spaghetti code)&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;prone to break down&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;hard to maintain&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;This list is never ending. And it would become just another&lt;strong&gt; “big ball of mud”&lt;/strong&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;The bad architecture will lead to “&lt;a href=&quot;http://batman.wikia.com/wiki/The_Pit&quot; target=&quot;_blank&quot;&gt;The Pit&lt;/a&gt;”. For such poorly architected apps in order to understand the architectural characteristics one need to know the inner working of each component .&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt; The basic questions like &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;will it scale?&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;what are the performance characteristics ?&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;what are the deployment characteristics?&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;how much responsive is to the change?&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;All such questions will be very hard to answer if architecture of your app is not planned properly.&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;With a planned architecture one can define the basic working and behaviour of the application. And there are numerous architecture patterns which can be adopted depending on your requirements. For example, some architecture pattern will naturally lend themselves toward highly scalable apps while some other lend themselves to highly agile. Thus knowing strengths and weakness of each architecture pattern is necessary in order to choose for your business. I will be writing on following architecture patterns in coming days:-&lt;/span&gt;&lt;/p&gt;
+&lt;ol class=&quot;ol1&quot;&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;https://bitfurry.wordpress.com/2015/10/28/understanding-layered-architecture-scrupulously/&quot; target=&quot;_blank&quot;&gt;Layered architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Event-driven_architecture&quot; target=&quot;_blank&quot;&gt;Event-driven architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;http://viralpatel.net/blogs/microkernel-architecture-pattern-apply-software-systems/&quot; target=&quot;_blank&quot;&gt;Microkernel architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Space-based_architecture&quot; target=&quot;_blank&quot;&gt;Space-based architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;Stay tuned.&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;Credits :- Software architecture patterns by Mark Richards.&lt;/span&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 23 Oct 2015 06:43:53 +0530</pubDate>
+        <link>http://phoenixx.me/2015/10/23/architecture-patterns-which-and-why.html</link>
+        <guid isPermaLink="true">http://phoenixx.me/2015/10/23/architecture-patterns-which-and-why.html</guid>
         
         
       </item>
