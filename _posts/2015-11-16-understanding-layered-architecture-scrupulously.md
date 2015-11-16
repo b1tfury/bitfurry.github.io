@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Understanding Layered architecture scrupulously
-date: 2015-10-28 14:59:12.000000000 +05:30
+date: 2015-11-16
 ---
 <p class="p1">Layered architecture is also called as n-tier architecture pattern.</p>
 <p class="p1">Most Java EE Applications use this pattern only , so most of the architects are aware of this type of pattern.</p>
@@ -14,7 +14,8 @@ date: 2015-10-28 14:59:12.000000000 +05:30
 <li class="li1">Persistence</li>
 <li class="li1">Database</li>
 </ul>
-<p>[caption id="attachment_14" align="aligncenter" width="300"]<a href="https://bitfurry.files.wordpress.com/2015/10/1.jpg"><img class="wp-image-14 size-medium" title="layered architecture" src="https://bitfurry.files.wordpress.com/2015/10/1.jpg?w=300" alt="1" width="300" height="225" /></a> Layered architecture[/caption]</p>
+<p><a href="https://bitfurry.files.wordpress.com/2015/10/1.jpg"><img  class="wp-image-14 size-medium" title="layered architecture" src="https://bitfurry.files.wordpress.com/2015/10/1.jpg?w=300" alt="1" width="300" height="225" /></a> 
+<br>Layered architecture</p>
 <p class="p1">Sometimes when two layers have deeper connections they are merged into single one for example persistence layer embedded in to<span class="Apple-converted-space">  </span>business layer.When application is complex numbers of layers may increase to five to six.</p>
 <p class="p1">Each layer in the architecture forms an abstraction around its responsibilities needs to be done for the application. For example<span class="Apple-converted-space"> </span>: the<span class="Apple-converted-space">  </span>presentation layer need not to worry about how to get customer data, its only needs is to display the data in a particular format.</p>
 <p class="p1">Separation of concerns among the components is one of the powerful feature. Due to this it would be easy to build effective roles and responsibility models.</p>
@@ -29,7 +30,7 @@ date: 2015-10-28 14:59:12.000000000 +05:30
 <li class="li1">Easy maintenance i.e. in order to work on presentation layer one need not to know the in working of all other layers</li>
 </ul>
 <p class="p1">But there are times depending on project need some layers needs to be open i.e. we can bypass them to move to next layer.<span class="Apple-converted-space">  </span>In such scenarios instead of making one of<span class="Apple-converted-space">  </span>these layers open it suggested to add a service layer which could be open.</p>
-<p>[caption id="attachment_16" align="aligncenter" width="300"]<a href="https://bitfurry.files.wordpress.com/2015/10/3.jpg"><img class="wp-image-16 size-medium" src="https://bitfurry.files.wordpress.com/2015/10/3.jpg?w=300" alt="3" width="300" height="249" /></a> <strong> </strong>[/caption]</p>
+<p><a href="https://bitfurry.files.wordpress.com/2015/10/3.jpg"><img class="wp-image-16 size-medium" src="https://bitfurry.files.wordpress.com/2015/10/3.jpg?w=300" alt="3" width="300" height="249" /></a> <strong> </strong></p>
 <p class="p1">So , if we want to have some common services which can be used from service layer but independent of presentation layer then placing an open service layer below business layer solves our problem.</p>
 <p class="p1">Using this concept of open and closed layers one can define relationships between different layers and also provides designers and developers the necessary information about access restrictions within the architecture.</p>
 <p class="p4"><b>Example </b></p>
