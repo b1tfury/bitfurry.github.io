@@ -5,8 +5,8 @@
     <description>My conversations with neural networks and design patterns.</description>
     <link>http://phoenixx.me/</link>
     <atom:link href="http://phoenixx.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 12 Nov 2015 21:37:19 +0530</pubDate>
-    <lastBuildDate>Thu, 12 Nov 2015 21:37:19 +0530</lastBuildDate>
+    <pubDate>Mon, 16 Nov 2015 13:31:22 +0530</pubDate>
+    <lastBuildDate>Mon, 16 Nov 2015 13:31:22 +0530</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -75,125 +75,6 @@
         <pubDate>Mon, 09 Nov 2015 14:58:04 +0530</pubDate>
         <link>http://phoenixx.me/2015/11/09/red-green-commit-refactor-commit.html</link>
         <guid isPermaLink="true">http://phoenixx.me/2015/11/09/red-green-commit-refactor-commit.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Understanding Layered architecture scrupulously</title>
-        <description>&lt;p class=&quot;p1&quot;&gt;Layered architecture is also called as n-tier architecture pattern.&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;Most Java EE Applications use this pattern only , so most of the architects are aware of this type of pattern.&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;What exactly layered architecture is :-&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;Different application components are placed in horizontal layers , each layer has its own purpose and significance.(For example :- presentation logic or business logic)&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;There are no specific rule for how many type and number of layers , but most layered architecture applications have standard four layers :&lt;/p&gt;
-&lt;ul class=&quot;ul1&quot;&gt;
-&lt;li class=&quot;li1&quot;&gt;Presentation&lt;/li&gt;
-&lt;li class=&quot;li1&quot;&gt;Business&lt;/li&gt;
-&lt;li class=&quot;li1&quot;&gt;Persistence&lt;/li&gt;
-&lt;li class=&quot;li1&quot;&gt;Database&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;[caption id=&quot;attachment_14&quot; align=&quot;aligncenter&quot; width=&quot;300&quot;]&lt;a href=&quot;https://bitfurry.files.wordpress.com/2015/10/1.jpg&quot;&gt;&lt;img class=&quot;wp-image-14 size-medium&quot; title=&quot;layered architecture&quot; src=&quot;https://bitfurry.files.wordpress.com/2015/10/1.jpg?w=300&quot; alt=&quot;1&quot; width=&quot;300&quot; height=&quot;225&quot; /&gt;&lt;/a&gt; Layered architecture[/caption]&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;Sometimes when two layers have deeper connections they are merged into single one for example persistence layer embedded in to&lt;span class=&quot;Apple-converted-space&quot;&gt;  &lt;/span&gt;business layer.When application is complex numbers of layers may increase to five to six.&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;Each layer in the architecture forms an abstraction around its responsibilities needs to be done for the application. For example&lt;span class=&quot;Apple-converted-space&quot;&gt; &lt;/span&gt;: the&lt;span class=&quot;Apple-converted-space&quot;&gt;  &lt;/span&gt;presentation layer need not to worry about how to get customer data, its only needs is to display the data in a particular format.&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;Separation of concerns among the components is one of the powerful feature. Due to this it would be easy to build effective roles and responsibility models.&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;Due well-defined component interfaces and limited scoping of components it is easy to develop,test, govern and maintain applications using n-tier architecture plans.&lt;/p&gt;
-&lt;p class=&quot;p4&quot;&gt;&lt;b&gt;Key Concepts:-&lt;/b&gt;&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;Notice &lt;b&gt;CLOSED &lt;/b&gt;has been marked at the end of each architectural layer , this concept is called &lt;b&gt;layers of isolation.&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://bitfurry.files.wordpress.com/2015/10/2.jpg&quot;&gt;&lt;img class=&quot;wp-image-15 size-medium aligncenter&quot; src=&quot;https://bitfurry.files.wordpress.com/2015/10/2.jpg?w=300&quot; alt=&quot;2&quot; width=&quot;300&quot; height=&quot;205&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;In the above diagram we can see that if we want to go to database layer from presentation layer then it’s mandatory to pass through Business and Persistence layer which sounds a bit weird. But it has more benefits than drawback:&lt;/p&gt;
-&lt;ul class=&quot;ul1&quot;&gt;
-&lt;li class=&quot;li1&quot;&gt;All layers are independent so changes in one layer won&#39;t affect another&lt;/li&gt;
-&lt;li class=&quot;li1&quot;&gt;Less coupling&lt;/li&gt;
-&lt;li class=&quot;li1&quot;&gt;Easy maintenance i.e. in order to work on presentation layer one need not to know the in working of all other layers&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class=&quot;p1&quot;&gt;But there are times depending on project need some layers needs to be open i.e. we can bypass them to move to next layer.&lt;span class=&quot;Apple-converted-space&quot;&gt;  &lt;/span&gt;In such scenarios instead of making one of&lt;span class=&quot;Apple-converted-space&quot;&gt;  &lt;/span&gt;these layers open it suggested to add a service layer which could be open.&lt;/p&gt;
-&lt;p&gt;[caption id=&quot;attachment_16&quot; align=&quot;aligncenter&quot; width=&quot;300&quot;]&lt;a href=&quot;https://bitfurry.files.wordpress.com/2015/10/3.jpg&quot;&gt;&lt;img class=&quot;wp-image-16 size-medium&quot; src=&quot;https://bitfurry.files.wordpress.com/2015/10/3.jpg?w=300&quot; alt=&quot;3&quot; width=&quot;300&quot; height=&quot;249&quot; /&gt;&lt;/a&gt; &lt;strong&gt; &lt;/strong&gt;[/caption]&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;So , if we want to have some common services which can be used from service layer but independent of presentation layer then placing an open service layer below business layer solves our problem.&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;Using this concept of open and closed layers one can define relationships between different layers and also provides designers and developers the necessary information about access restrictions within the architecture.&lt;/p&gt;
-&lt;p class=&quot;p4&quot;&gt;&lt;b&gt;Example &lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://bitfurry.files.wordpress.com/2015/10/4.jpg&quot;&gt;&lt;img class=&quot;wp-image-17 size-medium aligncenter&quot; src=&quot;https://bitfurry.files.wordpress.com/2015/10/4.jpg?w=300&quot; alt=&quot;4&quot; width=&quot;300&quot; height=&quot;290&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;The above diagram is an example of layered architecture which shows the flow in which a request from a business user to retrieve customer information for a particular individual.&lt;/p&gt;
-&lt;p class=&quot;p4&quot;&gt;&lt;b&gt;Considerations&lt;/b&gt;&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;Although this architecture pattern is solid and generally used for most of the applications in their starting phase when it is not sure that which architecture will suite the most.&lt;/p&gt;
-&lt;p class=&quot;p1&quot;&gt;But there are some things which one should keep in mind while choosing this pattern for their application.&lt;/p&gt;
-&lt;ol class=&quot;ol1&quot;&gt;
-&lt;li class=&quot;li1&quot;&gt;&lt;strong&gt;Architecture sinkhole anti-pattern&lt;/strong&gt; - Since all requests needs to traverse through all all layers in order to go form top to bottom , so this pattern may sometime become overhead to your requests. For this scenario one should follow &lt;strong&gt;80:20 rule&lt;/strong&gt; i.e if less than 20 percent of requests are just passing through all layers without any logic implemented on them then this pattern is suitable but , if this ratio is reverse which means that most of the request are travelling back and forth with any additional logic being implemented on them in between then my friend this pattern is a sinkhole for your application.&lt;/li&gt;
-&lt;li class=&quot;li1&quot;&gt;Also this pattern will lead to monolithic applications even if layers are independent and also deployed separately, which is not considered good for general robustness and reliability, &lt;span class=&quot;Apple-converted-space&quot;&gt; &lt;/span&gt;performance and scalability&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p class=&quot;p4&quot;&gt;&lt;b&gt;Analysis:&lt;/b&gt;&lt;/p&gt;
-&lt;table style=&quot;border-collapse:collapse;border-spacing:0;table-layout:fixed;width:686px;&quot;&gt;
-&lt;colgroup&gt;
-&lt;col style=&quot;width:103px;&quot; /&gt;
-&lt;col style=&quot;width:143px;&quot; /&gt;
-&lt;col style=&quot;width:100px;&quot; /&gt;
-&lt;col style=&quot;width:101px;&quot; /&gt;
-&lt;col style=&quot;width:84px;&quot; /&gt;
-&lt;col style=&quot;width:155px;&quot; /&gt;&lt;/colgroup&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;th style=&quot;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Overall agility&lt;/th&gt;
-&lt;th style=&quot;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Ease of deployment&lt;/th&gt;
-&lt;th style=&quot;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Testability&lt;/th&gt;
-&lt;th style=&quot;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Performance&lt;/th&gt;
-&lt;th style=&quot;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Scalability&lt;/th&gt;
-&lt;th style=&quot;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Ease of development&lt;/th&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&quot;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Low&lt;/td&gt;
-&lt;td style=&quot;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Low&lt;/td&gt;
-&lt;td style=&quot;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;High&lt;/td&gt;
-&lt;td style=&quot;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Low&lt;/td&gt;
-&lt;td style=&quot;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;Low&lt;/td&gt;
-&lt;td style=&quot;font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;vertical-align:top;&quot;&gt;High&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p class=&quot;p2&quot;&gt;&lt;span class=&quot;Apple-converted-space&quot;&gt;     &lt;/span&gt;&lt;/p&gt;
-</description>
-        <pubDate>Wed, 28 Oct 2015 14:59:12 +0530</pubDate>
-        <link>http://phoenixx.me/2015/10/28/understanding-layered-architecture-scrupulously.html</link>
-        <guid isPermaLink="true">http://phoenixx.me/2015/10/28/understanding-layered-architecture-scrupulously.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Architecture Patterns : Which and why ?</title>
-        <description>&lt;blockquote&gt;
-&lt;p class=&quot;p1&quot;&gt;&lt;span class=&quot;s1&quot;&gt;Carefully designed structure of something is called architecture.  &lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p class=&quot;p1&quot;&gt;&lt;span class=&quot;s1&quot;&gt;In software industry this word is often used but rarely followed at first place.&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;Often all developers start coding their project without a clear picture of the architecture of their application and the reason for not having it is “this is just beginning , we will formalise it at a later stage.” . Eventually it leads to a standard n-tier architecture in which implicitly multiple layers are created to separate modules into packages.&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;This will make source code :-&lt;/span&gt;&lt;/p&gt;
-&lt;ul class=&quot;ol1&quot;&gt;
-&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;unorganised&lt;/span&gt;&lt;/li&gt;
-&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;highly coupled (spaghetti code)&lt;/span&gt;&lt;/li&gt;
-&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;prone to break down&lt;/span&gt;&lt;/li&gt;
-&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;hard to maintain&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;This list is never ending. And it would become just another&lt;strong&gt; “big ball of mud”&lt;/strong&gt;.&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;The bad architecture will lead to “&lt;a href=&quot;http://batman.wikia.com/wiki/The_Pit&quot; target=&quot;_blank&quot;&gt;The Pit&lt;/a&gt;”. For such poorly architected apps in order to understand the architectural characteristics one need to know the inner working of each component .&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt; The basic questions like &lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;will it scale?&lt;/span&gt;&lt;/li&gt;
-&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;what are the performance characteristics ?&lt;/span&gt;&lt;/li&gt;
-&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;what are the deployment characteristics?&lt;/span&gt;&lt;/li&gt;
-&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;how much responsive is to the change?&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;All such questions will be very hard to answer if architecture of your app is not planned properly.&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;With a planned architecture one can define the basic working and behaviour of the application. And there are numerous architecture patterns which can be adopted depending on your requirements. For example, some architecture pattern will naturally lend themselves toward highly scalable apps while some other lend themselves to highly agile. Thus knowing strengths and weakness of each architecture pattern is necessary in order to choose for your business. I will be writing on following architecture patterns in coming days:-&lt;/span&gt;&lt;/p&gt;
-&lt;ol class=&quot;ol1&quot;&gt;
-&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;https://bitfurry.wordpress.com/2015/10/28/understanding-layered-architecture-scrupulously/&quot; target=&quot;_blank&quot;&gt;Layered architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Event-driven_architecture&quot; target=&quot;_blank&quot;&gt;Event-driven architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;http://viralpatel.net/blogs/microkernel-architecture-pattern-apply-software-systems/&quot; target=&quot;_blank&quot;&gt;Microkernel architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Space-based_architecture&quot; target=&quot;_blank&quot;&gt;Space-based architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;Stay tuned.&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;Credits :- Software architecture patterns by Mark Richards.&lt;/span&gt;&lt;/p&gt;
-</description>
-        <pubDate>Fri, 23 Oct 2015 06:43:53 +0530</pubDate>
-        <link>http://phoenixx.me/2015/10/23/architecture-patterns-which-and-why.html</link>
-        <guid isPermaLink="true">http://phoenixx.me/2015/10/23/architecture-patterns-which-and-why.html</guid>
         
         
       </item>
