@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b79ada9-9ecd-421a-9304-f5287fee8598" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_drafts/2015-10-28-understanding-layered-architecture-scrupulously.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-11-13-architecture-patterns-which-and-why.md" afterPath="$PROJECT_DIR$/_posts/2015-11-13-architecture-patterns-which-and-why.md" />
     </list>
     <ignored path="bitfurry.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +24,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2015-11-16-understanding-layered-architecture-scrupulously.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2015-11-16-understanding-layered-architecture-scrupulously.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2015-11-16-understanding-layered-architecture-scrupulously.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3960396">
+            <state vertical-scroll-proportion="1.626506">
               <caret line="16" column="69" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2015-11-13-architecture-patterns-which-and-why.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2015-11-13-architecture-patterns-which-and-why.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.68720376">
+              <caret line="29" column="124" selection-start-line="29" selection-start-column="124" selection-end-line="29" selection-end-column="124" />
               <folding />
             </state>
           </provider>
@@ -49,8 +59,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/_posts/2015-11-13-architecture-patterns-which-and-why.html" />
-        <option value="$PROJECT_DIR$/_posts/2015-11-13-architecture-patterns-which-and-why.md" />
         <option value="$PROJECT_DIR$/_posts/2015-11-16-understanding-layered-architecture-scrupulously.md" />
+        <option value="$PROJECT_DIR$/_posts/2015-11-13-architecture-patterns-which-and-why.md" />
       </list>
     </option>
   </component>
@@ -237,20 +247,21 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2015-11-13-architecture-patterns-which-and-why.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2015-11-16-understanding-layered-architecture-scrupulously.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68720376">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        <state vertical-scroll-proportion="1.626506">
+          <caret line="16" column="69" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2015-11-16-understanding-layered-architecture-scrupulously.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2015-11-13-architecture-patterns-which-and-why.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3960396">
-          <caret line="16" column="69" selection-start-line="16" selection-start-column="69" selection-end-line="16" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.68720376">
+          <caret line="29" column="124" selection-start-line="29" selection-start-column="124" selection-end-line="29" selection-end-column="124" />
           <folding />
         </state>
       </provider>

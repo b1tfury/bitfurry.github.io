@@ -5,8 +5,8 @@
     <description>My conversations with neural networks and design patterns.</description>
     <link>http://phoenixx.me/</link>
     <atom:link href="http://phoenixx.me/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Nov 2015 23:18:54 +0530</pubDate>
-    <lastBuildDate>Mon, 16 Nov 2015 23:18:54 +0530</lastBuildDate>
+    <pubDate>Mon, 16 Nov 2015 23:20:30 +0530</pubDate>
+    <lastBuildDate>Mon, 16 Nov 2015 23:20:30 +0530</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -114,7 +114,7 @@
 &lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;All such questions will be very hard to answer if architecture of your app is not planned properly.&lt;/span&gt;&lt;/p&gt;
 &lt;p class=&quot;p6&quot;&gt;&lt;span class=&quot;s1&quot;&gt;With a planned architecture one can define the basic working and behaviour of the application. And there are numerous architecture patterns which can be adopted depending on your requirements. For example, some architecture pattern will naturally lend themselves toward highly scalable apps while some other lend themselves to highly agile. Thus knowing strengths and weakness of each architecture pattern is necessary in order to choose for your business. I will be writing on following architecture patterns in coming days:-&lt;/span&gt;&lt;/p&gt;
 &lt;ol class=&quot;ol1&quot;&gt;
-&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;Layered architecture&lt;/span&gt;&lt;/li&gt;
+&lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;http://phoenixx.me/2015/11/16/understanding-layered-architecture-scrupulously.html&quot; target=&quot;_blank&quot;&gt;Layered architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Event-driven_architecture&quot; target=&quot;_blank&quot;&gt;Event-driven architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;http://viralpatel.net/blogs/microkernel-architecture-pattern-apply-software-systems/&quot; target=&quot;_blank&quot;&gt;Microkernel architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
 &lt;li class=&quot;li7&quot;&gt;&lt;span class=&quot;s1&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Space-based_architecture&quot; target=&quot;_blank&quot;&gt;Space-based architecture&lt;/a&gt;&lt;/span&gt;&lt;/li&gt;
