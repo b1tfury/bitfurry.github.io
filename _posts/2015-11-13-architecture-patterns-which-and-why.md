@@ -27,7 +27,7 @@ date: 2015-11-13
 <p class="p6"><span class="s1">All such questions will be very hard to answer if architecture of your app is not planned properly.</span></p>
 <p class="p6"><span class="s1">With a planned architecture one can define the basic working and behaviour of the application. And there are numerous architecture patterns which can be adopted depending on your requirements. For example, some architecture pattern will naturally lend themselves toward highly scalable apps while some other lend themselves to highly agile. Thus knowing strengths and weakness of each architecture pattern is necessary in order to choose for your business. I will be writing on following architecture patterns in coming days:-</span></p>
 <ol class="ol1">
-<li class="li7"><span class="s1"><a href="https://bitfurry.wordpress.com/2015/10/28/understanding-layered-architecture-scrupulously/" target="_blank">Layered architecture</a></span></li>
+<li class="li7"><span class="s1">Layered architecture</a></span></li>
 <li class="li7"><span class="s1"><a href="https://en.wikipedia.org/wiki/Event-driven_architecture" target="_blank">Event-driven architecture</a></span></li>
 <li class="li7"><span class="s1"><a href="http://viralpatel.net/blogs/microkernel-architecture-pattern-apply-software-systems/" target="_blank">Microkernel architecture</a></span></li>
 <li class="li7"><span class="s1"><a href="https://en.wikipedia.org/wiki/Space-based_architecture" target="_blank">Space-based architecture</a></span></li>
