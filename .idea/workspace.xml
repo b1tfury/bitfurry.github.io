@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b79ada9-9ecd-421a-9304-f5287fee8598" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2015-11-13-architecture-patterns-which-and-why.md" afterPath="$PROJECT_DIR$/_posts/2015-11-13-architecture-patterns-which-and-why.md" />
-    </list>
+    <list default="true" id="9b79ada9-9ecd-421a-9304-f5287fee8598" name="Default" comment="" />
     <ignored path="bitfurry.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
