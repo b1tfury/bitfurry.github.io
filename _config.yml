@@ -15,4 +15,5 @@ twitter_username: sahil_kharb
 github_username:  bitfurry
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
+markdown: redcarpet

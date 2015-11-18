@@ -20,6 +20,7 @@ describe Point do
   end
 end
 ```
+
 2. Now the dumbest way to add this functionality to our code or in TDD world dumbest way to pass this spec is following :
 
 ```ruby
