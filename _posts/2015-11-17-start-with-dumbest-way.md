@@ -10,7 +10,7 @@ date: 2015-11-17
 And if one is doing TDD, then being dumb is always good. While solving a problem, we always start by describing problem behaviour in different scenarios. Among all scenarios it is always wise to pick that starting point where the problem's behaviour has least complexity. Write the test for that specific and while write code to make that test pass, try to do in the dumbest way.
 Let's us take an example in which we wanted to calculate distance between two points:
 
-* First behaviour with minimal complexity is when both points are equal
+ First behaviour with minimal complexity is when both points are equal
 
 ```ruby
 describe Point do
@@ -21,7 +21,7 @@ describe Point do
 end
 ```
 
-* Now the dumbest way to add this functionality to our code or in TDD world dumbest way to pass this spec is following :
+ Now the dumbest way to add this functionality to our code or in TDD world dumbest way to pass this spec is following :
 
 ```ruby
 class Point
@@ -33,7 +33,7 @@ end
 
 Now slightly increasing the complexity in behavior for example:
 
-* Second behaviour could be when both points lies on X axis.
+ Second behaviour could be when both points lies on X axis.
 
 ```ruby
 describe Point do
@@ -45,7 +45,7 @@ describe Point do
 end
 ```
 
-* For this specific behaviour the dumbest possible way to pass this spec is following :
+ For this specific behaviour the dumbest possible way to pass this spec is following :
 
 ```ruby
 class Point
