@@ -5,8 +5,8 @@ layout: page
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 <p>Hi! I'm Sahil.</p> 
 <p>I am working as a Product Engineer at GO-JEK R&D Office Bengaluru.
-I recently graduated with a Bachelors in Technology in Computer Science from IIT Jodhpur. 
-I love to meet new people. I can also be found on Twitter and GitHub.</p>
+I did my Bachelors in Technology in Computer Science from IIT Jodhpur(2015). 
+I love to meet new people. I can also be found on <a href="https://twitter.com/bitfurry">Twitter</a> and <a href="https://github.com/bitfurry">Github</a>.</p>
 <!---
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
